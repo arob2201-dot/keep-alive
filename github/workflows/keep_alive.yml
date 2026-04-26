@@ -1,0 +1,13 @@
+```yaml
+name: Keep Alive
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Space
+        run: curl https://huggingface.co/spaces/Marshiiiii/my-telegram-bot
+```
