@@ -1,4 +1,4 @@
-```yaml
+yaml
 name: Keep Alive
 on:
   schedule:
@@ -10,4 +10,3 @@ jobs:
     steps:
       - name: Ping Space
         run: curl https://huggingface.co/spaces/Marshiiiii/my-telegram-bot
-```
